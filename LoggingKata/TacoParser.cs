@@ -23,30 +23,46 @@
 
             // TODO: Grab the latitude from your array at index 0
             // You're going to need to parse your string as a `double`
-            // which is similar to parsing a string as an `int`
-            
-            
+            // which is similar to parsing a string as an `int`  DONE
+
+            var latitude = double.Parse(cells[0]);
+
+
+
             // TODO: Grab the longitude from your array at index 1
             // You're going to need to parse your string as a `double`
-            // which is similar to parsing a string as an `int`
-            
-            
-            // TODO: Grab the name from your array at index 2
-            
+            // which is similar to parsing a string as an `int` DONE
+
+            var longitude = double.Parse(cells[1]);
+
+
+            // TODO: Grab the name from your array at index 2 DONE
+
+            string name = cells[2];
+
 
             // TODO: Create a TacoBell class
-            // that conforms to ITrackable
-            
+            // that conforms to ITrackable DONE
+
             // TODO: Create an instance of the Point Struct
-            // TODO: Set the values of the point correctly (Latitude and Longitude) 
+            // TODO: Set the values of the point correctly (Latitude and Longitude) DONE
+
+            var point = new Point();
+            point.Latitude = latitude;
+            point.Longitude = longitude;
 
             // TODO: Create an instance of the TacoBell class
-            // TODO: Set the values of the class correctly (Name and Location)
+            // TODO: Set the values of the class correctly (Name and Location) DONE
+
+            var tacoBell = new TacoBell();
+            tacoBell.Name = name;
+            tacoBell.Location = point;
+
 
             // TODO: Then, return the instance of your TacoBell class,
-            // since it conforms to ITrackable
+            // since it conforms to ITrackable DONE
 
-            return null;
+            return tacoBell;
         }
     }
 }
